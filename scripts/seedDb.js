@@ -1,6 +1,9 @@
-const { Profile, Contract, Job } = require("../src/model");
+const { createSequelize } = require("../src/model");
 
 async function seed() {
+  const sequelize = createSequelize();
+  const { Profile, Contract, Job } = sequelize.models;
+
   // create tables
   await Profile.sync({ force: true });
   await Contract.sync({ force: true });

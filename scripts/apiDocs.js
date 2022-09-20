@@ -9,7 +9,7 @@ const options = {
     scheme: "http",
     components: {},
   },
-  apis: ["./openapi/*.yaml", "./src/app.js"],
+  apis: ["./openapi/*.yaml", "./src/routes/*.js"],
 };
 
 const swaggerDocument = swaggerJsdoc(options);
