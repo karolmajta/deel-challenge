@@ -1,3 +1,21 @@
+# Hello there :)
+
+I believe all requirements from this readme were met.
+
+Additionally:
+
+### Tests
+
+Run them with `npm test`. Only non-admin routes are covered.
+
+### Swagger
+
+After you run the project with `npm start` in another terminal window
+run `npm run swagger`. It will serve API documentation that can be
+used to exercise the API on http://localhost:3002. Only non-admin
+routes are covered. I think it's more useful than some dummy frontend.
+
+
 # DEEL BACKEND TASK
 
   
