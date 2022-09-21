@@ -4,6 +4,7 @@ const cors = require("cors");
 const contractRoutes = require("./routes/contracts");
 const jobsRoutes = require("./routes/jobs");
 const balancesRoutes = require("./routes/balances");
+const adminRoutes = require("./routes/admin");
 
 function createApp({ sequelize }) {
   const app = express();
@@ -15,6 +16,7 @@ function createApp({ sequelize }) {
   contractRoutes(app);
   jobsRoutes(app);
   balancesRoutes(app);
+  adminRoutes(app);
 
   return app;
 }

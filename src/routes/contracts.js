@@ -1,5 +1,5 @@
-const { getProfile } = require("../middleware/getProfile");
 const { Op } = require("sequelize");
+const { getProfile } = require("../middleware/getProfile");
 
 function contractsRoutes(app) {
   /**
