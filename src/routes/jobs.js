@@ -3,8 +3,6 @@ const { Op } = require("sequelize");
 
 function jobsRoutes(app) {
   /**
-   * @returns all unpaid jobs for active contracts
-   *
    * @openapi
    * /jobs/unpaid:
    *   get:
@@ -45,11 +43,9 @@ function jobsRoutes(app) {
   });
 
   /**
-   * @returns all unpaid jobs for active contracts
-   *
    * @openapi
    * /jobs/{id}/pay:
-   *   get:
+   *   post:
    *     description: Pay for a job
    *     parameters:
    *      -  name: id

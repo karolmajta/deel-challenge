@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const contractRoutes = require("./routes/contracts");
 const jobsRoutes = require("./routes/jobs");
+const balancesRoutes = require("./routes/balances");
 
 function createApp({ sequelize }) {
   const app = express();
@@ -13,6 +14,7 @@ function createApp({ sequelize }) {
 
   contractRoutes(app);
   jobsRoutes(app);
+  balancesRoutes(app);
 
   return app;
 }

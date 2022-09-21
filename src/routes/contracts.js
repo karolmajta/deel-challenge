@@ -3,8 +3,6 @@ const { Op } = require("sequelize");
 
 function contractsRoutes(app) {
   /**
-   * @returns contract
-   *
    * @openapi
    * /contracts/{id}:
    *   get:
@@ -47,8 +45,6 @@ function contractsRoutes(app) {
   });
 
   /**
-   * @returns list of contracts
-   *
    * @openapi
    * /contracts:
    *   get:
